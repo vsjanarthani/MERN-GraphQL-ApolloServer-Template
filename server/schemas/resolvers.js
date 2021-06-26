@@ -4,8 +4,10 @@ const { signToken } = require('../utils/auth');
 
 const resolvers = {
     Query: {
-
-    
+        user: async (_parent, { email }) => {
+            return User.findOne({ email })
+              .select('-__v -password')
+          },
     },
     Mutation: {
         addUser: async (_parent, args) => {
