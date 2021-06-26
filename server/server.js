@@ -24,9 +24,9 @@ if (process.env.NODE_ENV === 'production') {
   app.use(express.static(path.join(__dirname, '../client/build')));
 }
 
-app.get('*', (_req, res) => {
-  res.sendFile(path.join(__dirname, '../client/build/index.html'));
-});
+// app.get('*', (_req, res) => {
+//   res.sendFile(path.join(__dirname, '../client/build/index.html'));
+// });
 
 
 db.once('open', () => {
@@ -34,5 +34,5 @@ db.once('open', () => {
     console.log(`🌍 Now listening on localhost:${PORT}`)
     console.log(`Use GraphQL at http://localhost:${PORT}${server.graphqlPath}`)
   });
- 
+
 });

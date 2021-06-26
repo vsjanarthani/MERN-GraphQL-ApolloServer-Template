@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 
 mongoose.connect(
-  process.env.MONGODB_ENDPOINT || 'mongodb://localhost/googlebooksDb', 
+  process.env.MONGODB_ENDPOINT || 'mongodb://localhost/campusConnectDb',
   {
     useNewUrlParser: true,
     useUnifiedTopology: true,
