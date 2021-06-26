@@ -11,15 +11,23 @@ const useStyles = makeStyles(() => ({
         bottom: "0",
         left: "0",
         width: "100%",
-        height: "10%",
+        minHeight: "10%",
         borderTop: '2px',
         borderColor: '#ccc',
         zIndex: 2,
         '@media (min-width:600px)': {
-            height: "5%",
-            paddingBottom: 20,
+            minHeight: "5%",
         },
     },
+    footer: {
+        color: "whitesmoke",
+        '@media (max-width:1200px)': {
+            fontSize: '1rem',
+        },
+        '@media (min-width:1200px)': {
+            fontSize: '1.5rem',
+        },
+    }
 }));
 
 const Footer = () => {
@@ -27,7 +35,7 @@ const Footer = () => {
 
     return (
         <div className={classes.bottomNavContainer}>
-            <h3>Made by Janarthani V S</h3>
+            <h3 className={classes.footer}>Made by Janarthani V S</h3>
         </div>
     );
 };
