@@ -1,9 +1,9 @@
-# Campus Connect  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+# APP Name  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 ## Description
-This is an app to connect students 
+Description goes here
 
 ## Built Using
-JavaScript, ES6, MongoDB, React, bootstrap, Node.js (Express, Mongoose, graphql, jsonwebtoken, apollo/client, apollo-server-express).
+Technologies goes here
 
 ## Table of Contents
 * [Installation](#Installation)
@@ -17,7 +17,7 @@ JavaScript, ES6, MongoDB, React, bootstrap, Node.js (Express, Mongoose, graphql,
 * [Questions](#Questions)
 
 ### Installation
-To clone the repo run ```git clone https://github.com/vsjanarthani/Campus-Connect-MERN.git ``` in your terminal. After cloning the repo, run ```npm install``` to install the necessary dependencies.
+To clone the repo run ```git clone {insert http link of the repo} ``` in your terminal. After cloning the repo, run ```npm install``` to install the necessary dependencies.
 
 ### Usage
 After installing all the dependencies, run ```npm start``` in your terminal to start the application. 
