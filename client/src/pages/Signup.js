@@ -102,27 +102,30 @@ const Signup = () => {
         event.preventDefault();
 
         try {
-            const userData = await addUser({
+            console.log(formState);
+            const { data } = await addUser({
                 variables: { ...formState }
-            });
-            console.log(userData);
-            if (userData.status === 200) {
-                setOpen(true)
-                setAlertMsg('Form submission Success');
-                setSeverity('success')
-            }
-            else {
-                setOpen(true)
-                setAlertMsg('Submission Failed, Try again!');
-                setSeverity('warning')
-            }
 
-            Auth.login(userData.data.addUser.token);
+            });
+            console.log(data);
+            // if (userData.status === 200) {
+            //     setOpen(true)
+            //     setAlertMsg('Form submission Success');
+            //     setSeverity('success')
+            // }
+            // else {
+            //     setOpen(true)
+            //     setAlertMsg('Submission Failed, Try again!');
+            //     setSeverity('warning')
+            // }
+
+            Auth.login(data.addUser.token);
         } catch (e) {
+            console.log(error);
             setOpen(true)
             setAlertMsg(e.text);
             setSeverity('error')
-            console.error(e);
+            console.log("signup error", e);
         }
     };
 
