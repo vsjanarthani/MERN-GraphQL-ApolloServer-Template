@@ -4,9 +4,9 @@ const db = require('../config/connection');
 const { User } = require('../models');
 
 db.once('open', async () => {
-    await User.deleteMany({});
+  await User.deleteMany({});
 
-      // create user data
+  // create user data
   const userData = [];
 
   for (let i = 0; i < 50; i += 1) {
@@ -17,8 +17,8 @@ db.once('open', async () => {
     userData.push({ username, email, password });
   }
 
-await User.collection.insertMany(userData);
-
+  await User.collection.insertMany(userData);
+  console.log("All done!");
   process.exit(0);
 
 })
