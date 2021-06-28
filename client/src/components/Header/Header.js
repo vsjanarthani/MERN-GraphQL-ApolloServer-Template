@@ -70,12 +70,12 @@ const Header = () => {
                     <Typography
                         component={Button}
                         href="/">
-                        <span className={classes.title}>Campus Connect</span>
+                        <span className={classes.title}>App Name/Logo</span>
                     </Typography>
                     <List>
                         {Auth.loggedIn() ? (
                             <>
-                                <Button className={classes.listItem} href="/chat"><ChatIcon /> Chat</Button>
+                                <Button className={classes.listItem} href="/chat"><ChatIcon /> Features</Button>
                                 <Button className={classes.listItem} href="/" onClick={logout}><ExitToAppIcon /> Logout</Button>
 
                             </>
